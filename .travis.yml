@@ -1,0 +1,11 @@
+language: java
+jdk:
+- openjdk7
+- oraclejdk7
+env:
+- DB=POSTGRES
+- BROWSER=true
+install:
+- mvn install -DskipTests=true
+script: 
+- mvn test
