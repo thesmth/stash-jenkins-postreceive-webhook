@@ -1,11 +1,8 @@
 language: java
 jdk:
 - openjdk7
-- oraclejdk7
-env:
-- DB=POSTGRES
-- BROWSER=true
-install:
-- mvn install -DskipTests=true
-script: 
-- mvn test
+- oraclejdk8
+notifications:
+  hipchat:
+    rooms:
+      secure: IJxjAi8fgIPFKRhNksTSXmnC/zj2p0pjKMqGXJlNVy5o987xEmWJC481vUDvrQbaFKoSA1Vm0h2PClWX7DVElP0rbvk6Woh6lrioXbP+WzjnPS2C3ko9A4UFtEXM0GbuPbeMu+8aqI6qux2U/R3NRlcnr4BnglwrgbibH7SpdfU5p6enJzBys8HLBOYOmuyG2LHNDPJC2AsNtFp064C4T4tK1YP7Wu71tQYuvrAhwJMZGI3rHsYb2LjCqypmmpRHDPvOcNopN4dIkVDMNGEkwZWlcB1IehJ6P4uOAx0FDcvvW6vEc8zMCkILi7ivfVG4iWhD010rW92Q4WpcICMnhYOMeAtq1Z3/2n7mvAIBV+4L7WSoQV2iCtWkA1Hx5DvOs7LvH0gkbsDddkjhYpmb2C4fbIhAMHq1UZa9QH5m3HYQ1nggU+n5Uk7IC5UYzkrm7s6ctgl32js9rss+wHAmIGQ79uXWGe+rbr/LSiItLDb6FHfldI78mm9THeEgx/NiGUbiUsj21LjVH1/tIw1eN10wbWW6pSIzakqn2Hsv4VLDxq/P6fUehs0HydCMMWNigTGBeYeMVXTii8VKpaMPqvhqPUmeRRDA/cw9CbiLyBlcZ/8pLOlL/hCOlBrlwsrdNA9lDBMHa2e7zsx20E54Z2ovaXpxpHUe+o7l1kcCKI4=
